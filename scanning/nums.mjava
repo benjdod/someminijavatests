@@ -1,0 +1,13 @@
+// these should be valid (I think leading zeros are, not sure, check Piazza)
+
+0001
+9090
+101010101
+123456
+8 54 93 23
+
+// these three lines should not scan as three numbers
+
+0.1
+1.
+.1

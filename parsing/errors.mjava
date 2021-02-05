@@ -14,7 +14,9 @@ public class BadClass1 {               // no visibility specifiers on classes
     }
 
     private int dontWork(int a, boolean b, ) {      // bad parameter list
-        return 3; ;         // semicolons alone are not valid statements (they are in real java)
+        ;           // semicolons alone are not valid statements (they are in real java)
+
+        return 3; 
     }
 
     void anotherBadMethod(a)        // types required for param fields
@@ -29,10 +31,10 @@ class Overambition {
 
     public static int badOperators(int x) {
         int y = x;
-        x += 3;             // no += or related ops (-=, *=, /=, etc)
-        ++y;                // no inc/dec operators
-        y = y + (x << 3)    // no bitwise operators (<<, >>, &, |, etc)
-        x = x + (y % 3);    // no modulo
+        x += 3;                     // no += or related ops (-=, *=, /=, etc)
+        ++y;                        // no inc/dec operators
+        y = (y + (x << 3)) & 65     // no bitwise operators (<<, >>, &, |, etc)
+        x = x + (y % 3);                // no modulo
         y = (x + y) > 3 ? x + y : 2;    // no ternary
         return y;
     }
@@ -61,7 +63,9 @@ class Overambition {
     }
 
     void badThings() {
-        int h = 0xa0;           // no hex literals (I think octals are okay though)
+        int h = 0xa0;           // no adventurous literals 
+                                // (I think octals are okay though given 
+                                // the wording of the mini java spec)
 
         long l;                 // no
         double d;               // no

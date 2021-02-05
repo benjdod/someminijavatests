@@ -51,6 +51,9 @@ class Test1 {
             } else x = x - 2;
         }
 
+        // dangling else???/??/???????
+        if (x > 1) if (x > 2) if (x > 3) if (x > 4) x = 5; else x = 65;
+
         while (x < 100) x = x + 2;
 
         return x;
@@ -61,6 +64,10 @@ class Test1 {
 class Test2 {
     public int index;
     public int type;
+}
+
+class Test3 {
+    // empty classes are valid
 }
 
 
