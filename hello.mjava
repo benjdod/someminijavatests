@@ -1,7 +1,0 @@
-class hello {
-    int x;
-
-    public void h() {
-        return;
-    }
-}
