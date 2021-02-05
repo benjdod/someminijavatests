@@ -1,0 +1,24 @@
+/* Scanning tests of death */
+/* note that you need both types of comments working
+   to even begin testing with this file */
+
+this if else class static public private final void int boolean while return new true false     // all of these are keywords
+This iF elSe cLASS sTatIc PubLic priVaTe FINal VOid iNt BooLean WHilE RetUrN nEW TrUe FaLsE     // none of these are
+
+/* these should all be idents and not keywords */
+thissen
+ifuncular
+elsevier
+classic 
+statically 
+publicity 
+finale 
+voidify 
+integer 
+booleanization 
+whilett 
+returned 
+news 
+true_blue 
+falsely
+

@@ -1,0 +1,79 @@
+/* this file should be used to help make sure that your parser is 
+ * catching errors that it should. To use, make sure each error is caught 
+ * then either fix or remove it. */ 
+
+public class BadClass1 {               // no visibility specifiers on classes
+
+    private static int x = 90;      // cannot assign in field declaration
+    int 12_y;                       // bad identifier
+    boolean money$;                 // another bad identifier
+    boolean[] b_array;              // no boolean arrays
+
+    public stupid int fail() {      // invalid method declaration
+        return 3;
+    }
+
+    private int dontWork(int a, boolean b, ) {      // bad parameter list
+        return 3; ;         // semicolons alone are not valid statements (they are in real java)
+    }
+
+    void anotherBadMethod(a)        // types required for param fields
+        return;                     // body must be blocked, not a single statement
+}
+
+// don't go above and beyond
+class Overambition {
+
+    public boolean आ;       // no non-ascii characters
+    public int ＢＡＤ;       // no non-ascii characters
+
+    public static int badOperators(int x) {
+        int y = x;
+        x += 3;             // no += or related ops (-=, *=, /=, etc)
+        ++y;                // no inc/dec operators
+        y = y + (x << 3)    // no bitwise operators (<<, >>, &, |, etc)
+        x = x + (y % 3);    // no modulo
+        y = (x + y) > 3 ? x + y : 2;    // no ternary
+        return y;
+    }
+
+    public void badConstructs() {
+        int i = 0;
+        int z = 0;
+
+        for (i = 0; i < 6; i = i + 1) {     // no for loops
+            z = z + i;
+        }
+
+        do {                                // no do-while loops
+            z = z - 2;
+        } while (z > 0)
+
+        switch (z) {                        // no switch
+            case 0:
+                z = 5;
+                break;
+            default:
+                z = 0;
+        }
+
+        return;
+    }
+
+    void badThings() {
+        int h = 0xa0;           // no hex literals (I think octals are okay though)
+
+        long l;                 // no
+        double d;               // no
+        float f;                // no
+    }
+
+    private int this;       // reserved keyword as identifier
+}
+
+class BadClass3 {
+
+}
+
+
+// comment at end of file

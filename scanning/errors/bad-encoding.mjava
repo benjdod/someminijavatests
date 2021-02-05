@@ -1,0 +1,25 @@
+
+傲
+
+int x = 34;
+
+// this file should not scan or parse successfully since it contains a 
+// character encoded in utf-8 that is above a 1-byte encoding.
+// For reference, a valid ASCII encoded file will only contain bytes which are
+// between 0 and 127 inclusive. UTF-8 encoded files may (and probably do) contain
+// bytes in this range, but may not.
+
+// However, note that characters in a comment are not explicitly erroneous
+// as per the assignment specifications. I'm not sure what this means, 
+// but it could mean that:
+
+    // うぇえぉお
+
+// or...
+
+    /*  Ʃ over [i = 0, i => inf] 
+        1.5*Ɠ*/i^2 
+        where Ɠ = 5/43 
+    */
+
+// is valid, or it could not. Encodings are a mess. Just be aware...

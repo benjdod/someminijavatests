@@ -1,0 +1,25 @@
+// these are all valid operators and syntax symbols in MiniJava
+// none of these should throw scan errors
+
+>
+<
+==
+<=
+>=
+!=
+&&
+||
+!
++
+-
+*
+/
+.
+,
+;
+[
+]
+{
+}
+(
+)

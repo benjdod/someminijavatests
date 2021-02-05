@@ -1,0 +1,15 @@
+ident_123                       // valid
+your________________mom         // valid
+someValue                       // valid
+constant                        // valid
+If                              // valid
+This                            // valid
+bool                            // valid
+thisident                       // valid
+new_this                        // valid
+
+_                               // invalid
+_ident                          // invalid
+__yo__yo__yo                    // invalid
+12_ident                        // invalid
+12_Ident                        // invalid

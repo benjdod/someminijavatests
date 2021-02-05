@@ -1,0 +1,17 @@
+// These are all valid keywords in MiniJava
+
+class
+public
+private
+static
+int
+boolean
+void
+true
+false
+return
+if
+else
+while
+this
+new
